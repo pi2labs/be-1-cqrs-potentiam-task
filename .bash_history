@@ -37,3 +37,17 @@ php bin/console make:test
 php bin/console make:test
 php bin/console debug:dotenv
 exit
+composer require twig asset
+composer require asset
+composer require symfony/monolog-bundle
+php bin/console debug:router
+composer require nelmio/api-doc-bundle
+php bin/phpunit 
+composer require --dev symfony/browser-kit symfony/http-client
+clear
+php bin/phpunit 
+php bin/phpunit 
+php bin/phpunit 
+composer outdated
+clear
+exit
