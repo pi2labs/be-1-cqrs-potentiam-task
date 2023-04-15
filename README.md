@@ -38,3 +38,18 @@ curl --location --request POST 'http://localhost:8080/posts' \
     "summary": "Nam non est risus. Donec at orci at lectus consequat scelerisque vel ac justo."
 }'
 ```
+
+## Logic:
+
+- Feature 1: updated the fields with new field description and used
+  ``php bin/console doctrine:schema:update --force --complete `` to sync the entity with database
+
+
+- feature 3: used transformer to transform entity to Application DTO and use the response to transform to JSON object
+
+
+## Accessing API docs
+Please use the below link to access API's through docs
+```
+http://localhost:8080/api/doc
+```

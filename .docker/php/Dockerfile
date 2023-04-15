@@ -16,15 +16,9 @@ RUN apt-get update -yqq \
         supervisor \
         zip \
         unzip \
-    && docker-php-ext-install bcmath \
-    && docker-php-ext-install opcache \
-    && docker-php-ext-install pdo \
-    && docker-php-ext-install pdo_pgsql \
-    && docker-php-ext-install sockets \
-    && pecl install -o -f amqp \
-    && docker-php-ext-enable amqp \
-    && pecl install -o -f redis \
-    && docker-php-ext-enable redis \
+    && docker-php-ext-install bcmath opcache pdo pdo_pgsql sockets \
+    && pecl install -o -f amqp redis \
+    && docker-php-ext-enable amqp redis \
     && pecl install xdebug-3.1.3 \
     && docker-php-ext-enable xdebug \
     && rm -rf /tmp/pear \
